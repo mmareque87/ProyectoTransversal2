@@ -1,0 +1,9 @@
+//poner custom creation en el jdesktoppane
+
+ImageIcon icon = new ImageIcon(getClass().getResource("/imagenes/fondo.jpg"));
+ Image image = icon.getImage();
+jdpEscritorio = new javax.swing.JDesktopPane(){
+    public void paintComponent(Graphics g){
+        g.drawImage(image,0,0,getWidth(),getHeight(),this);
+    }
+};

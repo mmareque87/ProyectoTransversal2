@@ -162,7 +162,7 @@ private DefaultTableModel modelo = new DefaultTableModel();
     private void jtApellidoKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtApellidoKeyReleased
         AlumnoData ad = new AlumnoData();
         
-        //List<Alumno> listaAlumnos = (List<Alumno>) ad.buscarAlumnoPorApellido(jtApellido.getText());
+        List<Alumno> listaAlumnos = (List<Alumno>) ad.buscarAlumnoPorApellido(jtApellido.getText());
 
         for (Alumno listaAlumno : ad.listarAlumnos()){
             if (listaAlumno.getApellido().startsWith(jtApellido.getText())) {
